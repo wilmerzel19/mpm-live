@@ -1,0 +1,37 @@
+.navbar{
+    background-color: #073e6b;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+.navbar-brand{
+    color: #e2dbdb;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.navbar-nav li a{
+    color: #f3e9e9;
+
+
+}
+
+.navbar-nav li a:hover{
+    color: #ffffff;
+    background-color: #0a5a9c;
+}
+
+.dropdown-item{
+    background-color: #34a4db;
+
+
+}
+ .btn{
+    background-color: #34a4db;
+    border-color: #34a4db;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+ }

@@ -1,6 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatMenu } from '@angular/material/menu';
+
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +20,8 @@ import { HistorialComponent } from './components/historial/historial.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,10 +30,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     EventosComponent,
     IdiomasComponent,
     HistorialComponent,
-    MenuComponent
+    MenuComponent,
+
+
   ],
   imports: [
     BrowserModule,
+
+
     AppRoutingModule,
     RouterModule.forRoot ([
       {path: 'eventos', component:EventosComponent},
@@ -36,8 +49,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
+
     ]),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatNativeDateModule,
+
+
+
+
 
 
   ],
