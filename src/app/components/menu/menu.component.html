@@ -1,95 +1,306 @@
-<div class="container-fluid">
-  <div class="row flex-nowrap">
-    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-      <div class="dropdown pb-4">
-        <a
-          href="#"
-          class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-          id="dropdownUser1"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <span class="d-none d-sm-inline mx-1">Todos los Eventos</span>
-        </a>
-        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-          <li><a class="dropdown-item" href="#">Todos los eventos</a></li>
-          <li><a class="dropdown-item" href="#">Recien iniciado (15Min)</a></li>
-          <li><a class="dropdown-item" href="#">Recien iniciado (60Min)</a></li>
-        </ul>
+<!-- Botón para abrir el menú -->
+
+
+
+<!-- Menú lateral -->
+<div class="offcanvas offcanvas-start" tabindex="1" id="sidebar">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Live_Sport</h5>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss=""
+      aria-label="Cerrar"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <a
+      href="#"
+      class="d-flex align-items-center text-decoration-none dropdown-toggle"
+      id="dropdownUser1"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <span class="d-none d-sm-inline mx-1">Todos los Eventos</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+      <li><a class="dropdown-item" href="#">Todos los eventos</a></li>
+      <li><a class="dropdown-item" href="#">Recien iniciado (15Min)</a></li>
+      <li><a class="dropdown-item" href="#">Recien iniciado (60Min)</a></li>
+    </ul>
+    <li>
+      <a
+        href="#submenu1"
+        data-bs-toggle="collapse"
+        class="nav-link align-middle"
+        ><fa-icon [icon]="faBasketball"></fa-icon>
+        <span class="ms-1 d-none d-sm-inline">Basquetbol</span>
+      </a>
+
+      <ul
+        class="collapse nav flex-column ms-1"
+        id="submenu1"
+        data-bs-parent="#menu"
+      >
+        <li></li>
         <li>
-          <a href="#submenu1" data-bs-toggle="collapse" class="nav-link  align-middle ">
-           <span class="ms-1 d-none d-sm-inline text-white">Basquetbol</span> </a>
-          <ul class="collapse  nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-              <li>
-               <li>
-                <a href="#submenu2" data-bs-toggle="collapse" class="nav-link">
-                  <span class="ms-1 d-none d-sm-inline text-white">Brasil</span></a>
-                <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                    <li class="w-100">
-                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">NBB</span></a>
-                    </li>
-
-                </ul>
+          <a href="#submenu2" data-bs-toggle="collapse" class="nav-link">
+            <span class="ms-1 d-none d-sm-inline">Brasil</span></a
+          >
+          <ul
+            class="collapse nav flex-column ms-1"
+            id="submenu2"
+            data-bs-parent="#menu"
+          >
+            <li class="w-100">
+              <a href="#" class="nav-link px-0">
+                <span class="d-none d-sm-inline">NBB</span></a
+              >
             </li>
-             <li>
-                <a href="#submenu3" data-bs-toggle="collapse" class="nav-link">
-                  <span class="ms-1  d-sm-inline text-white">Cuba</span></a>
-                <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                    <li class="w-100">
-                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-indigo"> CHAMPIONSHIP WOMEN</span></a>
-                    </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#submenu3" data-bs-toggle="collapse" class="nav-link">
+            <span class="ms-1 d-sm-inline">Cuba</span></a
+          >
+          <ul
+            class="collapse nav flex-column ms-1"
+            id="submenu3"
+            data-bs-parent="#menu"
+          >
+            <li class="w-100">
+              <a href="#" class="nav-link px-0">
+                <span class="d-none d-sm-inline"> CHAMPIONSHIP WOMEN</span></a
+              >
+            </li>
+          </ul>
+        </li>
 
-                </ul>
-                <li>
+        <li>
+          <a href="#submenu4" data-bs-toggle="collapse" class="nav-link">
+            <span class="ms-1 d-none d-sm-inline">España</span></a
+          >
+          <ul
+            class="collapse nav flex-column ms-1"
+            id="submenu4"
+            data-bs-parent="#menu"
+          >
+            <li class="w-100">
+              <a href="#" class="nav-link px-0">
+                <span class="d-none d-sm-inline"> LEB ORO</span></a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#submenu8" data-bs-toggle="collapse" class="nav-link">
+            <span class="ms-1 d-none d-sm-inline">Estados Unidos</span></a
+          >
+          <ul
+            class="collapse nav flex-column ms-1"
+            id="submenu8"
+            data-bs-parent="#menu"
+          >
+            <li class="w-100">
+              <a href="#" class="nav-link px-0">
+                <span class="d-none d-sm-inline"
+                  >Baloncesto universitario</span
+                ></a
+              >
+              <a href="#" class="nav-link px-0">
+                <span class="d-none d-sm-inline"
+                  >Baloncesto universitario F</span
+                ></a
+              >
+            </li>
+          </ul>
+        </li>
 
-                  <a href="#submenu4" data-bs-toggle="collapse" class="nav-link">
-                    <span class="ms-1 d-none d-sm-inline text-white">España</span></a>
-                  <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
-                      <li class="w-100">
-                          <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline"> LEB ORO</span></a>
-                      </li>
+        <li>
+          <a href="#submenu5" data-bs-toggle="collapse" class="nav-link">
+            <span class="ms-1 d-none d-sm-inline">Inglaterra</span></a
+          >
+          <ul
+            class="collapse nav flex-column ms-1"
+            id="submenu5"
+            data-bs-parent="#menu"
+          ></ul>
+        </li>
+        <li>
+          <a href="#submenu6" data-bs-toggle="collapse" class="nav-link">
+            <span class="ms-1 d-none d-sm-inline t">Islandia</span></a
+          >
+          <ul
+            class="collapse nav flex-column ms-1"
+            id="submenu6"
+            data-bs-parent="#menu"
+          ></ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a
+        href="#submenu7"
+        data-bs-toggle="collapse"
+        class="nav-link align-middle"
+        ><fa-icon [icon]="faHockeyPuck"></fa-icon>
+        <span class="ms-1 d-none d-sm-inline">Hockey</span>
+      </a>
+    </li>
 
-                  </ul>
-                </li>
-                <li>
-
-                  <a href="#submenu8" data-bs-toggle="collapse" class="nav-link">
-                    <span class="ms-1 d-none d-sm-inline text-white">Estados Unidos</span></a>
-                  <ul class="collapse nav flex-column ms-1" id="submenu8" data-bs-parent="#menu">
-                      <li class="w-100">
-                          <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Baloncesto universitario</span></a>
-                          <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Baloncesto universitario F</span></a>
-
-                      </li>
-
-                  </ul>
-                <li>
-
-                  <a href="#submenu5" data-bs-toggle="collapse" class="nav-link">
-                    <span class="ms-1 d-none d-sm-inline text-white">Inglaterra</span></a>
-                  <ul class="collapse nav flex-column ms-1" id="submenu5" data-bs-parent="#menu"></ul>
-
-                </li>
-                <li>
-
-                  <a href="#submenu6" data-bs-toggle="collapse" class="nav-link">
-                    <span class="ms-1 d-none d-sm-inline t">Islandia</span></a>
-                  <ul class="collapse nav flex-column ms-1" id="submenu6" data-bs-parent="#menu">
-
-                  </ul>
-              </li>
-              </ul>
-
-
-
-
-
-
-
-
-
-
-      </div>
-    </div>
+    <li>
+      <a
+        href="#submenu8"
+        data-bs-toggle="collapse"
+        class="nav-link align-middle"
+        ><fa-icon [icon]="faFootball"></fa-icon>
+        <span class="ms-1 d-none d-sm-inline">Football</span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="#submenu9"
+        data-bs-toggle="collapse"
+        class="nav-link align-middle"
+        ><fa-icon [icon]="faFutbol"></fa-icon>
+        <span class="ms-1 d-none d-sm-inline">Soccer</span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="#submenu10"
+        data-bs-toggle="collapse"
+        class="nav-link align-middle"
+        ><fa-icon [icon]="faVolleyball"></fa-icon>
+        <span class="ms-1 d-none d-sm-inline">Volleyball</span>
+      </a>
+    </li>
+    <li>
+      <a
+        href="#submenu11"
+        data-bs-toggle="collapse"
+        class="nav-link align-middle"
+        ><fa-icon [icon]="faTableTennis"></fa-icon>
+        <span class="ms-1 d-none d-sm-inline">Tennis</span>
+      </a>
+    </li>
   </div>
 </div>
+
+<div class="subnabar text">
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="menu"
+        ><fa-icon [icon]="faBasketball"></fa-icon
+      ></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="home"><fa-icon [icon]="faHockeyPuck"></fa-icon></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><fa-icon [icon]="faFootball"></fa-icon></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><fa-icon [icon]="faFutbol"></fa-icon></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><fa-icon [icon]="faVolleyball"></fa-icon></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"
+        ><fa-icon [icon]="faTableTennis"></fa-icon
+      ></a>
+    </li>
+  </ul>
+</div>
+<div class="card">
+  <div class="card-header" style="background-color: #0d2e4e">
+    <form class="d-flex">
+      <input
+        class="form-control me-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-success" type="submit">Search</button>
+      <br />
+
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Diferencia de puntos</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Total</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Ganador</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </form>
+    nbb
+  </div>
+  <div class="event-list__header">
+    <div class="event-list__header__desc"><span>mar. 15, 2023</span></div>
+
+    <div class="card-body">
+      <div class="row align-items-center">
+        <div class="col">
+          <p
+            class="event-list__item__details__teams__team"
+            title="MKS Dabrowa Gornicza"
+            data-testid="top-team-details"
+          >
+            MKS Dabrowa Gornicza
+          </p>
+          <div class="col">
+            <p
+              class="event-list__item__details__teams__team"
+              title="MBK Rieker Com Therm KN"
+              data-testid="bottom-team-details"
+            >
+              MBK Rieker Com Therm KN
+            </p>
+            <div class="event-list__item__details__date">
+              <time class="emphasis live">06:16</time>
+              <p>2do Cto</p>
+            </div>
+          </div>
+        </div>
+        <div class="offerings market--two-row market-6">
+          <div class="vertical clearfix">
+            <div class="col-xs-12">
+              <div>
+                <div class="odds">
+                  <div data-testid="odd-container" class="odd link">
+                    <span class="pull-left odds-description">-9.5</span
+                    ><span class="emphasis pane pull-right">+100</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div>
+                <div class="odds">
+                  <div data-testid="odd-container" class="odd link">
+                    <span class="pull-left odds-description">+9.5</span
+                    ><span class="emphasis pane pull-right">-134</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+

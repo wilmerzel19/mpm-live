@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterLink } from '@angular/router';
+import { RouterLink, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatMenu } from '@angular/material/menu';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -19,7 +20,12 @@ import { RouterModule } from '@angular/router';
 import { HistorialComponent } from './components/historial/historial.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SubnabarComponent } from './components/subnabar/subnabar.component';
 
+
+const routes: Routes = [
+  { path: 'home', component: HomeComponent },
+]
 
 
 @NgModule({
@@ -31,6 +37,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     IdiomasComponent,
     HistorialComponent,
     MenuComponent,
+    SubnabarComponent,
+
+
+
 
 
   ],
@@ -56,6 +66,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     HttpClientModule,
     MatNativeDateModule,
+    FontAwesomeModule,
+
 
 
 
@@ -63,6 +75,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
   ],
+ 
   providers: [],
   bootstrap: [AppComponent]
 })
