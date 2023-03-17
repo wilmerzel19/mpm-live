@@ -21,6 +21,11 @@ import { HistorialComponent } from './components/historial/historial.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SubnabarComponent } from './components/subnabar/subnabar.component';
+import {SidenavComponent} from  './components/sidenav/sidenav.component'
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 
 
 const routes: Routes = [
@@ -39,6 +44,9 @@ const routes: Routes = [
     MenuComponent,
     SubnabarComponent,
 
+    SidenavComponent,
+
+
 
 
 
@@ -55,6 +63,9 @@ const routes: Routes = [
       {path: 'Historial', component:HistorialComponent},
       {path: 'menu', component:MenuComponent},
 
+      {path: 'sidenav', component:SidenavComponent},
+
+
 
 
 
@@ -67,6 +78,9 @@ const routes: Routes = [
     HttpClientModule,
     MatNativeDateModule,
     FontAwesomeModule,
+    MatSidenavModule,
+    MatListModule,
+    MatExpansionModule,
 
 
 
@@ -75,7 +89,7 @@ const routes: Routes = [
 
 
   ],
- 
+
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -78,4 +78,20 @@
     padding-top: 48px;
   }
 
+  .example-container {
+    width: 500px;
+    height: 300px;
 
+  }
+
+  .example-sidenav-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #073e6b;
+
+  }
+
+  .example-sidenav {
+    padding: 50px;
+  }
