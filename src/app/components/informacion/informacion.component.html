@@ -1,0 +1,257 @@
+<h1>hola</h1>
+<div class="card mb-3">
+  <img src="/assets/img/basketbol.png" class="card-img-top" alt="" />
+  <a href="home" class="text"> Baloncesto Universitario - Femenino </a>
+  <div class="single-event-header__time">
+    <time datetime="17 de marzo de 2023" class="tiempo"> 05:52 </time>
+    <!-- ngIf: !event.opened.isFinished() --><span
+      ng-if="!event.opened.isFinished()"
+      class="time"
+    >
+      2do Cto </span
+    ><!-- end ngIf: !event.opened.isFinished() -->
+    <p class="ng-binding">Marquette W</p>
+    <p class="ng-binding-dos">South Florida W</p>
+
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <th>Marcador</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>32</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <mat-tab-group fitInkBarToContent>
+      <mat-tab label="Eventos">
+        <div class="mat-accordion">
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>GANADOR DEL JUEGO</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div
+              class="odd link ng-animated"
+              odd-change="odds.val"
+              state=""
+              ng-class="{
+                active: odds.hasBet(),
+                inactive: odds.noMarket(),
+                disabled: !odds.isBettable
+              }"
+              ng-click="odds.toggleBet($event)"
+            >
+              <span class="pull-left odds-description">Marquette W</span>
+              <span class="emphasis pane pull-right">-110</span>
+            </div>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>DIFERENCIAL DE PUNTOS</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <span class="pull-left odds-description">+5.5</span>
+            <span class="emphasis pane pull-right">-110</span>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>Total</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <span class="pull-left odds-description">+5.5</span>
+            <span class="emphasis pane pull-right">-110</span>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>CAL SANTA BARBARA TOTAL</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <span class="pull-left odds-description">+5.5</span>
+            <span class="emphasis pane pull-right">-110</span>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>BAYLOR TOTAL</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <span class="pull-left odds-description">+5.5</span>
+            <span class="emphasis pane pull-right">-110</span>
+          </mat-expansion-panel>
+        </div>
+      </mat-tab>
+      <mat-tab label="2da Mitad">
+        <div class="mat-accordion">
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>Resultado de la 2da Mitad</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>DOBLE OPORTUNIDAD</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>EMPATE - NO APUESTA</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>DIFERENCIAL DE PUNTOS</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>CAL SANTA BARBARA TOTAL</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>BAYLOR TOTAL</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+        </div>
+      </mat-tab>
+      <mat-tab label="4to Cuarto">
+        <div class="mat-accordion">
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>GANADOR DEL JUEGO</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>DIFERENCIAL DE PUNTOS</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>Total</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>CAL SANTA BARBARA TOTAL</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>BAYLOR TOTAL</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+        </div>
+      </mat-tab>
+      <mat-tab label="Tiempo Reglamentario">
+        <div class="mat-accordion">
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>GANADOR DEL JUEGO</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>DIFERENCIAL DE PUNTOS</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>Total</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>CAL SANTA BARBARA TOTAL</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h6>BAYLOR TOTAL</h6>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Eventos</p>
+          </mat-expansion-panel>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

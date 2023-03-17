@@ -5,8 +5,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatMenu } from '@angular/material/menu';
-
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+
 
 
 
@@ -25,6 +26,8 @@ import {SidenavComponent} from  './components/sidenav/sidenav.component'
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { InformacionComponent } from './components/informacion/informacion.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 
@@ -43,8 +46,9 @@ const routes: Routes = [
     HistorialComponent,
     MenuComponent,
     SubnabarComponent,
-
     SidenavComponent,
+    InformacionComponent,
+
 
 
 
@@ -64,6 +68,8 @@ const routes: Routes = [
       {path: 'menu', component:MenuComponent},
 
       {path: 'sidenav', component:SidenavComponent},
+      {path: 'informacion', component:InformacionComponent},
+
 
 
 
@@ -81,7 +87,7 @@ const routes: Routes = [
     MatSidenavModule,
     MatListModule,
     MatExpansionModule,
-
+    MatTabsModule,
 
 
 

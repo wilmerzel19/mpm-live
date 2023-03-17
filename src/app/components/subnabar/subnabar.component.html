@@ -1,62 +1,41 @@
 <div class="offcanvas offcanvas-end" tabindex="1" id="submenu1">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title"><fa-icon [icon]="faGear"></fa-icon></h5>
-    <button
-      type="button"
-      class="btn-close"
-      data-bs-dismiss=""
-      aria-label="Cerrar"
-    ></button>
+    <mat-tab-group>
+      <mat-tab label="Apuestas">
+        <h6>Aplicar atodas las apuestas:</h6>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">$150</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">$300</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">$750</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">$1050</a>
+          </li>
+          <br />
+          <p>
+            Clickea cualquier posibilidad en la que deseas apostar, y se agregara a tu
+            hoja de apuestas
+          </p>
+          <br />
+          <p>Cantidad en USD.</p>
+        </ul>
+      </mat-tab>
+      <mat-tab label="Mis Apuestas">POR FAVOR INGRESE A SU CUENTA PARA REALIZAR APUESTAS</mat-tab>
+      <mat-tab label="mas ajustes"></mat-tab>
+
+
+
+      
+    </mat-tab-group>
+
+
+
   </div>
 
-  <h6>Aplicar atodas las apuestas:</h6>
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link" aria-current="page" href="#">$150</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">$300</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">$750</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">$1050</a>
-    </li>
-    <br />
-    <p>
-      Clickea cualquier posibilidad en la que deseas apostar, y se agregara a tu
-      hoja de apuestas
-    </p>
-    <br />
-    <p>Cantidad en USD.</p>
-  </ul>
-</div>
 
-<div class="subnabar text">
-  <ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="menu"
-        ><fa-icon [icon]="faBasketball"></fa-icon
-      ></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="home" ><fa-icon [icon]="faHockeyPuck"></fa-icon></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"><fa-icon [icon]="faFootball"></fa-icon></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"><fa-icon [icon]="faFutbol"></fa-icon></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"><fa-icon [icon]="faVolleyball"></fa-icon></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"
-        ><fa-icon [icon]="faTableTennis"></fa-icon
-      ></a>
-    </li>
-  </ul>
-</div>
 

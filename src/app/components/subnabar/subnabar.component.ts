@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { FaStackItemSizeDirective } from '@fortawesome/angular-fontawesome';
 import { faFontAwesome } from '@fortawesome/free-solid-svg-icons';
 import { faBasketball } from '@fortawesome/free-solid-svg-icons';
@@ -16,6 +17,7 @@ import { faGear } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./subnabar.component.css']
 })
 export class SubnabarComponent {
+
   FontAwesomeIcon=faFontAwesome;
 faBasketball=faBasketball;
 faHockeyPuck=faHockeyPuck;
@@ -24,6 +26,8 @@ faFutbol=faFutbol;
 faVolleyball=faVolleyball;
 faTableTennis=faTableTennis;
 faGear=faGear;
+
+
 
 
 }
